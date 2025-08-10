@@ -1,36 +1,49 @@
-Inconsistency Detector for PowerPoint Slides-
-This project extracts text and images from PowerPoint presentations and detects inconsistencies (numerical, factual, logical, timeline) between slides.
+Setup Instructions
 
-Setup-
-Clone the repo and go inside the folder.
+1.
+Clone the repository:
+git clone https://github.com/your-username/inconsistency-detector.git
+cd inconsistency-detector
+Create and activate a virtual environment:
 
-Create and activate a Python virtual environment.
+2. Windows (PowerShell):
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 
-Install dependencies with:
-
-nginx
-Copy
-Edit
+3. Install dependencies:
 pip install -r requirements.txt
-Put your PPTX file inside the data/ folder.
 
-Usage
-Run the main script:
+4. Add your PowerPoint file:
+Place your .pptx file inside the data/ folder.
 
-css
-Copy
-Edit
+
+How to Use
+Run the main script to analyze the presentation:
+
 python src/main.py
-This will analyze the PPTX, print inconsistencies in the terminal, and save a report in outputs/analysis_report.txt.
+The inconsistencies will be printed in the terminal.
 
-Project Structure
-data/ — input PPTX files
 
-outputs/ — reports and extracted images
+Project Structure:
 
-src/ — source code (extractor, analyzer, main script)
-
+data/                # Input PowerPoint files and slide images
+outputs/             # Analysis reports
+src/                 # Source code modules (extract, OCR, analyze, main)
 .gitignore
-
 requirements.txt
+README.md
+Features
+Extracts both typed text and images from slides.
 
+Applies OCR on slide images to capture embedded text.
+
+Uses AI to detect inconsistencies in data and statements across slides.
+
+Provides clear, structured output referencing slide numbers and issue types.
+
+Limitations
+Designed for English-language presentations.
+
+Accuracy depends on quality of slides and OCR.
+
+Currently command-line only, no GUI.
