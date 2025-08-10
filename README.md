@@ -1,26 +1,26 @@
-Setup Instructions
+**Setup Instructions**
 
-1.Clone the repository:
+**1.Clone the repository:**
 
 git clone https://github.com/your-username/inconsistency-detector.git
 cd inconsistency-detector
 Create and activate a virtual environment:
 
-2. Windows (PowerShell):
+**2. Windows (PowerShell):**
 
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 
-3. Install dependencies:
+**3. Install dependencies:**
 
 pip install -r requirements.txt
 
-4. Add your PowerPoint file:
+**4. Add your PowerPoint file:**
 
 Place your .pptx file inside the data/ folder.
 
 
-How to Use
+**How to Use**
 
 Run the main script to analyze the presentation:
 
@@ -28,7 +28,7 @@ python src/main.py
 The inconsistencies will be printed in the terminal.
 
 
-Project Structure:
+**Project Structure:**
 
 data/
 outputs/           
